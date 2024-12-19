@@ -1,0 +1,101 @@
+/* Cố định phần header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #333; /* Màu nền tối cho header */
+    color: white;
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+/* Đảm bảo rằng phần content không bị che khuất */
+body {
+    padding-top: 80px;
+    background-color: #121212; /* Màu nền tối cho toàn bộ body */
+    color: #f0f0f0; /* Màu chữ sáng */
+}
+
+/* Cải thiện breadcrumb */
+.breadcrumb {
+    background: #444; /* Màu nền tối cho breadcrumb */
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.breadcrumb a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    color: #007BFF;
+}
+
+.breadcrumb .active {
+    color: #ccc;
+}
+
+/* Nâng cao phần footer */
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 15px 0;
+}
+
+/* Đổi màu khi hover vào các mục dịch vụ và bài viết */
+.service-item, .post-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.service-item:hover, .post-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.service-item img, .post-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Button hover */
+.btn-primary {
+    background-color: #007BFF;
+    border-color: #007BFF;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+/* Phần form liên hệ */
+form .form-label {
+    color: #ccc;
+}
+
+form .form-control {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+form .form-control:focus {
+    border-color: #007BFF;
+    background-color: #444;
+}
+
+/* Hiệu ứng cho navbar khi hover */
+.navbar-nav .nav-link {
+    color: #f0f0f0;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007BFF;
+}
